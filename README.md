@@ -21,8 +21,9 @@ and make requests to the endpoint get http://localhost:8080/api/v1/github/{usern
 
 ## REST API Documentation
 
-You will be able to reach Swagger documentation accessing the following link below
+-You will be able to reach Swagger documentation accessing the following link below
 - http://localhost:8080/swagger-ui.html
+#####- [swagger yaml file](src/main/resources/static/swageer/v1.yaml) 
 
 ## Backend Development
 
