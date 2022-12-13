@@ -15,9 +15,7 @@ To run locally, you only have to execute in your shell the command below
 ./mvnw spring-boot:run
 ```
 
-Now you are able to access the endpoints
-http://localhost:8080/swagger-ui.html
-and make requests to the endpoint get http://localhost:8080/api/v1/github/{username}
+Now you are able to make requests to the endpoint get http://localhost:8080/api/v1/github/{username}
 
 ## REST API Documentation
 
