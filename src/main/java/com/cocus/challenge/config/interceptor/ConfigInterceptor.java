@@ -1,17 +1,14 @@
 package com.cocus.challenge.config.interceptor;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@RequiredArgsConstructor
-@Component
-public class ConfigInterceptor extends WebMvcConfigurerAdapter {
-    private final Interceptor interceptor;
+@Configuration
+public class ConfigInterceptor implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(interceptor);
+        registry.addInterceptor(new Interceptor()).addPathPatterns("/github/**").order(1);
     }
 }
